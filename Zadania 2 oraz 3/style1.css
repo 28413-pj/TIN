@@ -1,0 +1,135 @@
+body, ul, li, form, table {
+    margin: 0;
+    padding: 0;
+}
+h2, h1 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+body {
+    overflow-y: hidden;
+    display: flex;
+    font-family: Arial, sans-serif;
+    background: url('zdje.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #666; 
+    margin: 0;
+}
+
+.main-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    background: linear-gradient(to right, rgba(51, 35, 139, 0.8), rgba(51, 35, 139, 0.8));
+    width: 30%;
+}
+
+.navbar-data {
+    top: auto;
+    width: 100%;
+    height: fit-content;
+    list-style: none;
+    padding: 10px;
+    background-color: rgba(63, 57, 58, 0.829);
+}
+
+.navbar-data a {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    padding: 10px;
+    margin: 0;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-data a:hover {
+    background-color: #6521;
+}
+
+.navbar2 {
+    list-style: none;
+    background-color: #1244;
+    padding: 10px;
+}
+
+.content-container {
+    height: 100vh; 
+    width: 70%;
+    padding: 20px;
+    background: rgb(10, 8, 24);
+    overflow-y: scroll;
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+form {
+    display: flex;
+    gap: 30%;
+}
+.left-form{
+    flex: left;
+}
+.right-form{
+    flex: right;
+}
+textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+    resize: vertical;
+    
+  }
+
+.table-container {
+    
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 150px;
+}
+
+.table-container table {
+    
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-container th, .table-container td {
+    padding: 10px;
+    border: 1px solid #9b2929;
+}
+
+.table-container tr:nth-child(even) {
+    background-color: #a52323;
+}
+
+footer {
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); 
+    width: 80%;
+}
+
+.footer-container {
+    padding: 10px;
+}
